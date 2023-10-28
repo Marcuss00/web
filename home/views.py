@@ -12,8 +12,7 @@ def customer(request):
            name = first_name +last_name 
            age = request.POST["age"]
            password=request.POST("password")
-           sql = "INSERT INTO customer(first_name, last_name, age, password) VALUES(%s,%s,%s,%s);"
-           
+          
            return HttpResponse(f"name is {name}")
         except KeyError:
             return HttpResponse("something is missing")
