@@ -11,7 +11,7 @@ def customer(request):
            last_name=request.POST["last_name"]
            name = first_name +last_name 
            age = request.POST["age"]
-           password=request.POST("password")
+           password=request.POST["password"]
           
            return HttpResponse(f"name is {name}")
         except KeyError:
