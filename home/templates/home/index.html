@@ -6,6 +6,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="{% static 'home/style.css' %}">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+body{
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    place-items: center;
+    overflow: hidden;
+    font-family: Poppins;
+}
+
+.container {
+    position: relative;
+    width: 300px;
+    height: 520px;
+    border-radius: 20px;
+    padding: 10px;
+    box-sizing: border-box;
+    background: #ecf0f3;
+    box-shadow: 24px 24px 30px #8c8f94, -14px -14px 20px rgb(255, 255, 255);
+}
+.brand-logo {
+  height: 64px;
+  margin: auto;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  box-shadow: 7px 7px 10px #cbced1, -7px -7px 10px white;
+}
+.brand-background{
+  height: 64px;
+  width: 128px;
+  margin-left: 28%;
+  background-position: 0px 66px;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  background: url("bus.png");
+}
+
+.brand-title {
+  margin-top: 10px;
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #1DA1F2;
+  letter-spacing: 1px;
+}
+
+.inputs {
+    text-align: left;
+    margin-top: 30px;
+  }
+  
+  label, input, button {
+    display: block;
+    width: 100%;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+  }
+  #sub{
+    display: block;
+    margin: auto;
+    width: 50%;
+    
+  }
+  label {
+    margin-bottom: 4px;
+    color: #0077c1;
+  }
+  
+  label:nth-of-type(2) {
+    margin-top: 12px;
+  }
+  
+  input::placeholder {
+    color: rgb(101, 94, 94);
+  }
+  
+  input {
+    background: #ecf0f3;
+    padding: 10px;
+    padding-left: 20px;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 50px;
+    box-shadow: inset 10px 10px 6px #cbced1, inset -6px -6px 6px white;
+  }
+  
+  button {
+    color: white;
+    margin-top: 20px;
+    background: #1DA1F2;
+    height: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-shadow: 6px 6px 6px #cbced1, -6px -6px 6px white;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    box-shadow: none;
+  }</style>
 </head>
 <body>
     <div class="container">
