@@ -37,16 +37,21 @@ body{
   background-position: 0px 66px;
   background-repeat: no-repeat;
   box-sizing: border-box;
-  background: url("https://i.postimg.cc/MZrHfd9L/bus-3.png");
-}
-
-.brand-title {
-  margin-top: 10px;
+  margin-top: 10px; 
   font-weight: 900;
   font-size: 1.8rem;
   color: #1DA1F2;
   letter-spacing: 1px;
+  /* background: url("https://i.postimg.cc/MZrHfd9L/bus-3.png"); */
 }
+
+/*  .brand-title {
+  margin-top: 10px; 
+  font-weight: 900;
+  font-size: 1.8rem;
+  color: #1DA1F2;
+  letter-spacing: 1px;
+} */
 
 .inputs {
     text-align: left;
