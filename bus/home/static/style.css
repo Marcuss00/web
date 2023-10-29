@@ -12,7 +12,7 @@ ul {
 }
  .navbar {
       width: 400px;
-      margin-left: 50px;
+      margin-left: 0px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -51,8 +51,6 @@ i {
   
  }
 .form-body{
-    width: 100vw;
-    height: 100vh;
     display: flex;
     align-items: center;
     text-align: center;
