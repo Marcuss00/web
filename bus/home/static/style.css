@@ -25,6 +25,15 @@ li{
       display: flex;
       align-items: center;
 }
+li:hover{
+      margin: 10px;
+      padding: 10px;
+      box-shadow: inset 4px 4px 5px #6b6d70, inset -4px -4px 5px rgb(255, 255, 255);
+      border-radius: 10px;
+      display: flex;
+      border: 1px solid rgb(250, 248, 248);
+      align-items: center;
+}
 i {
     color: #1DA1F2; 
     margin-right: 8px;
