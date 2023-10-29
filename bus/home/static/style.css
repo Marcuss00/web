@@ -30,6 +30,9 @@ i {
     margin-right: 8px;
     
  }
+ #logo{
+      color: #1DA1F2; font-family: Poppins;
+ }
  a{
   display: flex;
   justify-content: center;
