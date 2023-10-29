@@ -5,6 +5,8 @@ from django.db import connection
 
 def home(request):
     return render(request, "index.html")
+def about(request):
+    return render(request, "about.html")
 def customer(request):
    if request.method =='POST' :
         try :
