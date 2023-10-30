@@ -73,7 +73,7 @@ i {
 }
 .brand-logo {
   height: 64px;
-  margin: auto;
+  margin: 10px 10px 10px 10px;
   border-radius: 50%;
   background-repeat: no-repeat;
   box-sizing: border-box;
@@ -95,13 +95,13 @@ i {
   /* background: url("https://i.postimg.cc/MZrHfd9L/bus-3.png"); */
 }
 
- /* .brand-title {
+ .brand-title {
   margin-top: 10px; 
   font-weight: 900;
   font-size: 1.8rem;
   color: #1DA1F2;
   letter-spacing: 1px;
-}  */
+} 
 
 .inputs {
     text-align: left;
