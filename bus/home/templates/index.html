@@ -1,69 +1,63 @@
-<!-- {% load static %} -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link type="text/css" href="static/style.css" rel="stylesheet" >
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <title> buser </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="static/form.css">
 </head>
 <body>
-    <div class="nav-container">
+   
+ <div class="form-container">
+    <form>
+        <div class="signup-label"> <h3> Sign-up </h3></div>
+
+
+        <label for="username">
+            username
+            <i class="fas fa-user icon-inside-input">
+            </i>
+        </label>
         
-    <nav class="navbar">
-      <ul>
-        <li id="logo">BUSSER</li>
-        <li>
-            <a href="#">
-                <i class="fas fa-home"></i> 
-            </a>
-        </li>
-        <li>
-            <a href="/about">
-                <i class="fas fa-info-circle"></i> 
-            </a>
-        </li>
-        <li>
-            <a href="#">
-                <i class="fas fa-cogs"></i> 
-            </a>
-        </li>
-       
-        <li>
-            <a href="#">
-                <i class="fas fa-envelope"></i> 
-            </a>
-        </li>
-    </ul>
-    </nav>
-    </div>
-    <div class="form-body">
-    <div class="container">
-        <form class="form" method="post" action="save_customer/"> 
-        {% csrf_token %}
-        <div class="brand-logo" style="margin-top: 10px;">
-          <div class="brand-background">BUSSER</div>
-        </div>
-        
-        <div class="inputs">
-           <label><h2 style="justify-content: center; display: flex;">customer-signup</h2></label> 
-        <label>FIRST NAME</label>
-        <input type="text" class="user-form" placeholder="Enter First Name" name="first_name" required>
-        <label>LAST NAME</label>
-        <input type="text" class="user-form" placeholder="Enter Last Name" name="last_name" required>
-        
-        <label>AGE</label>
-        <input type="number" class="user-form" placeholder="Enter Age" name="age" required>
-        
-        <label>PASSWORD </label>
-        <input type="password" class="user-form" placeholder="Enter your password" name="password" required>
-        
-    </div>
-        <button type="submit" id="sub" style="margin-top: 10px;">signup</button>
+        <input type="text" class="signup-input" id="username" name="username" placeholder="choose a username" >
+        <div class="error" id="username-len-error">username is too large or too small</div>
+
+
+        <label for="age">
+            age
+            <i class="fas fa-calendar icon-inside-input">
+            </i>
+        </label>
+        <input type="number" class="signup-input" name="age" id="age" placeholder="Enter age">
+        <div class="error" id="age-error">age is less than 13 year</div>
+
+
+        <label for="password">
+            password
+            <i class="fas fa-lock icon-inside-input">
+
+            </i>
+            password
+        </label>
+        <input type="password" class="signup-input" id="password" name="password" placeholder="Enter password" required>
+        <div class="error" id="password-error">this field can't be empty</div>
+
+
+
+        <label for="confirm-password" >
+             confirm password
+             <i class="fas fa-lock icon-inside-input"></i>
+             
+            </label>
+        <input type="password" class="signup-input" id="confirm-password" name="confirm-password" placeholder="confirm password" required>
+        <div class="error" id="confirm-password-error">password should match</div>
+
+        <button type="submit" class="signup-btn" onclick="validateForm()"> sign up </button>
     </form>
-</div>
-</div>
+ </div>
+
+ <script src="static/form.js">
+ </script>
 </body>
 </html>
