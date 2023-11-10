@@ -9,6 +9,7 @@ const validateForm =() => {
     {
         document.getElementById('username-len-error').style.display='block';
        usernameInput.style.borderColor='#ff0000';
+       
     }
     
     else
@@ -25,5 +26,23 @@ const validateForm =() => {
         document.getElementById('age-error').style.display ='none';
         userAge.style.borderColor='';
     }
-    
+    if(password.value==='')
+    {
+        document.getElementById('password-error').style.display='block';
+        password.style.borderColor='#ff0000';
+    }
+    else{
+        document.getElementById('password-error').style.display='none';
+        password.style.borderColor='';
+    }
+
+    if(password.value!==confirmPassword.value)
+    {
+        document.getElementById('confirm-password-error').style.display='block';
+        confirmPassword.style.borderColor='#ff0000';
+    }
+    else{
+        document.getElementById('confirm-password-error').style.display='none';
+        confirmPassword.style.borderColor='';
+    }
 }
