@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,9 +7,65 @@
     <title> buser </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="static/form.css">
+    <link rel="stylesheet" href="static/header.css">
 </head>
 <body>
-   <div class="header"></div>
+   <div class="header">
+
+    
+        <li class="home">
+            <a href="#">
+                Home
+            </a>
+        </li>
+        <li class="journey">
+            <a href="#">
+                journey
+            </a>
+        </li>
+    
+
+    
+        <li class="book-bus">
+            <a href="book_bus/">
+                Book a Bus
+            </a>           
+        </li>
+
+        <li class="booking-status">
+
+            <a href="#">
+                status
+            </a>
+        </li>
+    
+        
+        <li class="update">
+            <a href="#">
+                updates
+            </a>
+            
+        </li>
+
+
+        <li class="new">
+            <a href="#">
+                new
+            </a>
+        </li>
+
+
+       
+
+        <li class="faqs">
+            <a href="#">
+                use as provider
+            </a>
+        </li>
+   
+
+</div>
+
  <div class="form-container">
     
     <form method="post" onsubmit="validateForm(); return false;">

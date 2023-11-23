@@ -6,6 +6,7 @@
 }
 
 
+
 label
 {
     width: 100%;
@@ -18,8 +19,7 @@ label
     display: flex;
     justify-content: center;
     align-items: center;
-
-   
+    margin-top: 100px;  
 }
 
 form{
@@ -30,6 +30,7 @@ form{
     flex-direction: column;
     background: linear-gradient(to right, #f0f8ff, #d6ebff); 
     border-radius: 4px;
+    
 }
 
 input,.signup-btn
